@@ -1,0 +1,54 @@
+# ---- 敏感信息 ----
+.ssh_robot/
+*.pem
+*.key
+.bash_history
+*askpass*
+
+# ---- 固件 / 镜像 / 大备份 ----
+*.img
+*.img.gz
+robot_backup_*/
+*.tar.gz
+*.zip
+maps/*.posegraph
+maps/*.data
+
+# ---- 构建产物 ----
+build/
+install/
+log/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# ---- 编辑器/系统 ----
+.vscode-server/
+.cache/
+.config/
+.local/
+.pki/
+.dotnet/
+.copilot/
+*.code-workspace
+
+# ---- 备份/临时 ----
+*.bak
+*.bak_*
+*.orig
+*.rej
+*.tmp
+*.swp
+
+# ---- 日志/测试数据 ----
+*.log
+*.xwd
+*.bin
+*.csv
+*.pgm.bak
+!docs/*.csv
+
+# ---- 相机/截图 ----
+cam_*.jpg
+screen_*.png

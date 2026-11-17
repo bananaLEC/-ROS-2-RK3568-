@@ -1,0 +1,20 @@
+# 多目标巡航航点（2026-11-15 21:00 修订：避开中间狭窄区，走走廊 + 右侧开阔区）
+# 用 record_waypoints.py 在 RViz 里点击 Publish Point 可追加/重录
+# yaw: null = 自动取"朝向下一个航点"的方向
+waypoints:
+  - name: "A-走廊西"
+    x: 1.100
+    y: 0.170
+    yaw: null
+  - name: "B-走廊中"
+    x: 4.600
+    y: 0.170
+    yaw: null
+  - name: "C-开阔区"
+    x: 7.600
+    y: -0.430
+    yaw: null
+  - name: "D-开阔区东"
+    x: 9.400
+    y: 0.170
+    yaw: null

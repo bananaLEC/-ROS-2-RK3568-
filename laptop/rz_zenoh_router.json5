@@ -1,0 +1,29 @@
+{
+  // 笔记本本地 Zenoh 路由器：把本机 ROS 2 节点中继到小车的 zenoh-router
+  // 本机节点用默认配置连 tcp/localhost:7447 即可，不用改任何环境变量
+  mode: "router",
+
+  listen: {
+    endpoints: [
+      "tcp/127.0.0.1:7447",
+    ],
+  },
+
+  connect: {
+    endpoints: [
+      "tcp/192.168.3.100:7447",
+    ],
+    timeout_ms: { router: 10000, peer: -1, client: 0 },
+    exit_on_failure: { router: false, peer: false, client: true },
+    retry: {
+      period_init_ms: 1000,
+      period_max_ms: 4000,
+      period_increase_factor: 2,
+    },
+  },
+
+  scouting: {
+    multicast: { enabled: false },
+    gossip: { enabled: false },
+  },
+}

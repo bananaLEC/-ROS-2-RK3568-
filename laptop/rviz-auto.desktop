@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=RViz Auto Watch
+Comment=机器人建图/导航栈启动时自动打开 RViz2
+Exec=/home/banana/.local/bin/rviz_auto_watch.sh
+Icon=utilities-terminal
+Terminal=false
+X-GNOME-Autostart-enabled=true
+StartupNotify=false

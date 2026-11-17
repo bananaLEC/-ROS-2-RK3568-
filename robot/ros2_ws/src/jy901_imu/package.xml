@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>jy901_imu</name>
+  <version>0.1.0</version>
+  <description>JY901 IMU driver: raw accel/gyro only, magnetometer and fused attitude ignored</description>
+  <maintainer email="kickpi@local">kickpi</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>python3-serial</exec_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
